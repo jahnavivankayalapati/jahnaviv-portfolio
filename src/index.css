@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+html, body, #root { height: 100%; background: #0d1117; }
+
+@layer components {
+  .gh-container { @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8; }
+  .gh-card { @apply bg-ghCard border border-ghBorder rounded-xl2 shadow-gh; }
+  .gh-section-title { @apply text-xl font-semibold text-ghText mb-4; }
+  .gh-muted { @apply text-ghMuted; }
+  .gh-link { @apply text-ghAccent hover:underline; }
+  .pill { @apply inline-flex items-center px-2 py-1 rounded-full border border-ghBorder text-sm gh-muted; }
+  .repo-card { @apply gh-card p-5 hover:-translate-y-0.5 transition; }
+}
