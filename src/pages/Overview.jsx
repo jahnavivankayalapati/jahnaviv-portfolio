@@ -6,21 +6,30 @@ export default function Overview() {
   return (
     <section className="relative w-full h-screen flex flex-col items-center justify-center text-center bg-gradient-to-b from-[#05010a] via-[#0b1224] to-[#0e1530] text-white overflow-hidden m-0 p-0">
       
-      {/* 🌌 Full-screen animated background lights */}
+      {/* 🌌 Animated background lights */}
       <div className="absolute inset-0 w-full h-full overflow-hidden">
         <div className="absolute w-[700px] h-[700px] bg-blue-600/20 rounded-full blur-3xl animate-pulse top-[-150px] left-[-200px]" />
         <div className="absolute w-[600px] h-[600px] bg-purple-600/25 rounded-full blur-3xl animate-[ping_6s_ease-in-out_infinite] bottom-[-150px] right-[-200px]" />
         <div className="absolute w-[400px] h-[400px] bg-pink-600/15 rounded-full blur-3xl animate-[float_10s_ease-in-out_infinite] top-[30%] left-[40%]" />
       </div>
 
-      {/* ✨ Center Text */}
+      {/* ✨ Headline */}
       <motion.h1
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
-        className="text-5xl sm:text-6xl md:text-7xl font-extrabold tracking-tight relative drop-shadow-[0_0_15px_rgba(147,51,234,0.4)]"
+        className="text-6xl md:text-7xl font-extrabold tracking-tight"
       >
-        Hi, I’m{" "}
+        Hi,
+      </motion.h1>
+
+      <motion.h2
+        initial={{ opacity: 0, y: 40 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.3, duration: 1 }}
+        className="text-5xl sm:text-6xl md:text-7xl font-extrabold mt-2 tracking-tight relative drop-shadow-[0_0_15px_rgba(147,51,234,0.4)]"
+      >
+        I’m{" "}
         <motion.span
           animate={{
             backgroundPosition: ["0%", "200%"],
@@ -35,12 +44,12 @@ export default function Overview() {
           Jahnavi Vankayalapati
         </motion.span>{" "}
         👋
-      </motion.h1>
+      </motion.h2>
 
       <motion.p
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 0.4, duration: 1 }}
+        transition={{ delay: 0.6, duration: 1 }}
         className="text-blue-300 font-medium text-xl md:text-2xl mt-6 mb-6"
       >
         <Typewriter
@@ -61,7 +70,7 @@ export default function Overview() {
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.8, duration: 1 }}
+        transition={{ delay: 1, duration: 1 }}
         className="max-w-3xl text-gray-400 text-base sm:text-lg leading-relaxed px-6 md:px-0"
       >
         I design and build intelligent systems that merge data engineering with modern AI — 
@@ -72,7 +81,7 @@ export default function Overview() {
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1.2, duration: 0.8 }}
+        transition={{ delay: 1.3, duration: 0.8 }}
         className="flex flex-wrap justify-center gap-6 mt-12"
       >
         <a
