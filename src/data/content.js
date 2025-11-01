@@ -173,7 +173,7 @@ export const skills = {
     "SQL (Snowflake)",
     "Data Warehousing (Star & Snowflake Schemas)",
   ],
-  Visualization_and_BI: [
+  Data_Visualization_Analytics_Tools: [
     "Power BI",
     "Tableau",
     "Excel (Power Query, PivotTables)",
@@ -199,13 +199,7 @@ export const skills = {
     "FastAPI",
   ],
   
-  Certifications: [
-    
-    "AI for Everyone (2025)",
-    "AWS Certified AI Practitioner (2025)",
-    "Human Research – Social & Behavioral Research (2024)",
-    "StackRoute JAVA for Cloud (2022)",
-  ],
+  
 };
 
 
